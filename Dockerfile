@@ -18,8 +18,7 @@ RUN chmod 755 /samuel.sh
 EXPOSE 8900
 CMD  /samuel.sh
 
-这些代码是一个Dockerfile，它是一种用于自动构建Docker镜像的脚本语言。这个特定的Dockerfile用于在一个Debian操作系统上安装一些软件，然后设置一个运行noVNC服务的容器。下面是每一行代码的解释：
-
+--这些代码是一个Dockerfile，它是一种用于自动构建Docker镜像的脚本语言。这个特定的Dockerfile用于在一个Debian操作系统上安装一些软件，然后设置一个运行noVNC服务的容器。下面是每一行代码的解释：
 --FROM debian: 指定基础镜像，这里使用的是Debian操作系统。
 --RUN dpkg --add-architecture i386: 添加对i386架构的支持，这样可以从Debian软件源安装32位软件。
 --RUN apt update: 更新apt软件源。
